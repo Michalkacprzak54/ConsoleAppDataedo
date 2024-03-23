@@ -1,0 +1,18 @@
+1.Program.cs
+-Błędna nazwa pliku z danymi wejściowymi (dataa.csv na data.csv)
+-Dostosowanie do zmian nazw funkcji w Pliku DataReader.cs
+
+2.DataReader.cs
+-Nazwa funkcji ImportAndReadData na ImportData dla zwiększenia czytelności.
+-Usunięcie nieużywanego parametru bool printData = true.
+-Dodanie warunku if(!string.IsNullOrWhiteSpace(line)) w pętli while, aby sprawdzić, czy dana linia nie jest pusta.
+-Zmiana typu zmiennej IsNullable z string na bool w klasie ImportedObject.
+-Poprawna inicjalizacja listy importedObjects, która będzie przechowywać obiekty klasy ImportedObject.
+-Przeniesienie zapisywania danych do importedObject oraz ich czyszczenie z pętli for i foreach do pętli while.
+-Usunięcie dziedziczenia z klasy ImportedObject, które nie jest potrzebne w tym przypadku.
+-Dodanie funkcji CountChildren, która zlicza liczbę dzieci każdego obiektu w importedObjects.
+-Dodanie funkcji PrintData, która drukuje zebrane obiekty z importedObjects.
+
++3.ImportedObject.cs 
+-Przeniesienie klasy ImportedObject do osobnego pliku.
+
